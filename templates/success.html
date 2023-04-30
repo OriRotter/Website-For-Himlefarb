@@ -1,0 +1,65 @@
+<html lang="he" dir="rtl">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8774317040288763"
+     crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+  </head>
+    <style>
+      body {
+        text-align: center;
+        padding: 40px 0;
+        background: #EBF0F5;
+        position: relative;
+      }
+        h1 {
+          color: #83B04B;
+          font-family: "Noto Sans Hebrew", "Noto Sans Hebrew", sans-serif;
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #404F5E;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-size:20px;
+          margin: 0;
+        }
+      i {
+        color: #9ABC66;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .card {
+        position: absolute;
+        background: white;
+        padding: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    </style>
+    <title>עמוד אישור</title>
+    <body>
+      <div class="card">
+      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+        <i class="checkmark">✓</i>
+      </div>
+        <h1>נשלח בהצלחה!</h1>
+        <p>קיבלנו את הנוכחות שלך<br/> בבקשה צלם מסך להודעה זו למקרה והבקשה לא עברה!</p>
+        <p id="date"></p>
+      </div>
+    </body>
+  <script>
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+  </script>
+</html>
